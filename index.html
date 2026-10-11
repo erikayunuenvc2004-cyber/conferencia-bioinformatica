@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De fuera hacia adentro · Bioinformática</title>
+<meta name="author" content="Erika Yunuen Calderon Vazquez, Ingeniera en Biotecnología">
+<link rel="stylesheet" href="estilos.css">
+<!-- Todo es local: funciona con doble clic en index.html y sin internet. -->
+<script src="lib/3Dmol-min.js"></script>
+<script src="lib/model-viewer-clasico.js"></script>
+<script src="datos/contenido.js"></script>
+<script src="datos/estructuras.js"></script>
+</head>
+<body>
+<div id="stage" class="stage">
+  <div class="slide">
+  <header class="top">
+    <div class="brand">Bioinformática<span class="brand-sub">Hecho por Erika Yunuen Calderon Vazquez</span></div>
+    <nav class="journey" id="journey" aria-label="Recorrido"></nav>
+    <div class="clock" id="clock" title="Tiempo transcurrido (T para reiniciar)">00:00</div>
+    <div class="trip" aria-hidden="true"><i id="tripBar"></i></div>
+  </header>
+
+  <section class="titlebar">
+    <div class="tb-left">
+      <div class="kicker" id="kicker"></div>
+      <h1 id="title"></h1>
+    </div>
+    <div class="tb-right">
+      <div class="scale" id="scale"></div>
+      <div class="tb-row">
+        <div class="slot" id="slot"></div>
+        <button class="qbtn" id="qbtn" title="Mostrar la pregunta para el grupo (tecla Q)">Pregunta</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <section class="panel model-panel" id="modelPanel">
+      <div class="model-host" id="modelHost"></div>
+      <div class="evid" id="evid"></div>
+      <div class="pick" id="pick"></div>
+      <div class="hud" id="hud"></div>
+      <div class="legend" id="legend"></div>
+      <div class="loading" id="loading"><div class="spin"></div><span id="loadingText">Cargando modelo 3D…</span></div>
+      <div class="mfoot">
+        <div class="mlabel" id="mlabel"></div>
+        <div class="mcontrols" id="mcontrols"></div>
+      </div>
+    </section>
+
+    <section class="panel video-panel" id="videoPanel">
+      <div class="video-frame">
+        <div class="video-host" id="videoHost"></div>
+        <div class="vbadge">sin audio · en bucle</div>
+        <div class="vtime" id="vtime"></div>
+      </div>
+      <div class="vfoot">
+        <div class="vcap" id="vcap"></div>
+        <div class="vtabs" id="vtabs"></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="messages" id="msgBand" aria-live="polite">
+    <div class="msg" id="msg"></div>
+  </section>
+
+  <footer class="refs" id="refsBox">
+    <div class="refs-label">Referencias</div>
+    <ol class="refs-list" id="refs"></ol>
+    <div class="slideno" id="slideno"></div>
+  </footer>
+  </div>
+
+  <div class="qcard" id="qcard" hidden>
+    <div class="qbox">
+      <div class="qlabel">Pregunta para el grupo</div>
+      <div class="qtext" id="qtext"></div>
+      <div class="qthink"><span>Tiempo para pensar</span><div class="qbar"><i></i></div></div>
+      <div class="qhint">Q o clic para cerrar</div>
+    </div>
+  </div>
+</div>
+
+<aside class="drawer" id="notes" hidden>
+  <div class="drawer-head"><b>Guion del conferencista</b><span id="notesSlide"></span><button data-close="notes">Cerrar</button></div>
+  <div class="drawer-body" id="notesBody"></div>
+  <div class="drawer-foot">
+    <span>Pregunta para el grupo:</span><div id="notesQ" class="notes-q"></div>
+  </div>
+</aside>
+
+<aside class="drawer wide" id="biblio" hidden>
+  <div class="drawer-head"><b>Referencias (APA 7)</b><span>Todas las fuentes de la presentación</span><button data-close="biblio">Cerrar</button></div>
+  <ol class="drawer-body biblio-list" id="biblioList"></ol>
+</aside>
+
+<aside class="drawer" id="help" hidden>
+  <div class="drawer-head"><b>Controles</b><span></span><button data-close="help">Cerrar</button></div>
+  <div class="drawer-body help">
+    <p><kbd>Flecha derecha</kbd> <kbd>Espacio</kbd> <kbd>Av Pág</kbd> siguiente idea (al terminar, siguiente diapositiva). Funciona con presentadores/clickers.</p>
+    <p><kbd>Flecha izquierda</kbd> <kbd>Re Pág</kbd> idea o diapositiva anterior.</p>
+    <p><kbd>0</kbd>–<kbd>9</kbd> ir a un nivel · <kbd>Fin</kbd> cierre · clic en la barra superior para saltar.</p>
+    <p><kbd>Q</kbd> mostrar u ocultar la pregunta para el grupo en grande.</p>
+    <p><kbd>V</kbd> cambiar de video · <kbd>A</kbd> giro automático del modelo.</p>
+    <p><kbd>N</kbd> guion en esta pantalla · <kbd>P</kbd> abrir ventana del presentador (para tu laptop).</p>
+    <p><kbd>R</kbd> todas las referencias · <kbd>F</kbd> pantalla completa · <kbd>T</kbd> reiniciar reloj · <kbd>H</kbd> esta ayuda.</p>
+    <p><button id="printBtn" class="btn">Imprimir guion completo</button></p>
+  </div>
+</aside>
+
+<div class="presenter" id="presenter" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
