@@ -11,6 +11,7 @@
 const C = window.CONTENIDO, S = C.diapositivas, REF = C.referencias, E = window.ESTRUCTURAS || {};
 const $ = id => document.getElementById(id);
 const PRESENTER = location.hash === '#presentador';
+const MOVIL = window.matchMedia('(orientation: portrait), (max-width: 760px)');  // celular o pantalla vertical
 const chan = ('BroadcastChannel' in window) ? new BroadcastChannel('bioinfo-expo') : null;
 
 let cur = 0, msgI = 0, clipI = 0;
@@ -47,6 +48,8 @@ function go(i, atEnd){
   if (cur > 0 && !t0) startClock();
   const s = S[cur];
   if (changed){
+    if (MOVIL.matches && go.started2) window.scrollTo({ top: 0, behavior: 'smooth' });
+    go.started2 = true;
     $('kicker').textContent = s.kicker;
     $('title').innerHTML = `<span class="anim">${esc(s.titulo)}</span>`;
     $('scale').textContent = s.escala;
@@ -260,7 +263,8 @@ function ensureMV(){
   if (mv) return mv;
   mv = document.createElement('model-viewer');
   mv.setAttribute('camera-controls', '');
-  mv.setAttribute('touch-action', 'none');
+  // En celular se deja deslizar la página en vertical; girar el modelo es con arrastre horizontal.
+  mv.setAttribute('touch-action', MOVIL.matches ? 'pan-y' : 'none');
   mv.setAttribute('interaction-prompt', 'none');
   mv.setAttribute('shadow-intensity', '0.6');
   mv.setAttribute('exposure', '1.05');
@@ -762,6 +766,8 @@ function init(){
   $('printBtn').onclick = printScript;
   $('clock').onclick = startClock;
   $('qbtn').onclick = toggleQ;
+  $('prevBtn').onclick = prev;
+  $('nextBtn').onclick = next;
   $('qcard').onclick = toggleQ;
   if (chan) chan.onmessage = e => { const d = e.data;
     if (d.type === 'hello') broadcast();

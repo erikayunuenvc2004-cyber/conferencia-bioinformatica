@@ -131,6 +131,7 @@ model-viewer{--poster-color:transparent;outline:none;background:radial-gradient(
   border-left:.7cqh solid var(--aqua);box-shadow:0 .6cqh 2cqh #0f3a4512;overflow:hidden}
 .msg{flex:1;font-size:3.1cqh;line-height:1.22;font-weight:600;min-width:0;color:var(--ink)}
 .msg b{color:var(--aqua-d);font-weight:700}
+.msg-nav{display:none}
 .msg.in{animation:msgin .5s ease both}
 .msg.out{animation:msgout .2s ease-in both}
 
@@ -199,3 +200,76 @@ model-viewer{--poster-color:transparent;outline:none;background:radial-gradient(
 @keyframes blink{50%{opacity:.3}}
 @keyframes think{to{width:100%}}
 @media print{body{overflow:visible}}
+
+/* =========================================================================
+   CELULAR / PANTALLA VERTICAL: en vez de encoger la diapositiva 16:9,
+   todo se acomoda en una sola columna que se recorre con el dedo.
+   ========================================================================= */
+@media (orientation: portrait), (max-width: 760px){
+  html{overflow:auto;height:auto}
+  body{overflow:visible;height:auto;background:var(--bg)}
+  .stage{position:static;width:100%;height:auto;container-type:normal;overflow:visible}
+  .slide{position:static;display:flex;flex-direction:column;gap:12px;padding:0 14px 20px}
+  .top{flex-wrap:wrap;gap:6px 10px;padding:10px 0 8px;position:sticky;top:0;z-index:30;background:var(--bg)}
+  .brand{font-size:16px;gap:8px;flex-wrap:wrap}
+  .brand-sub{font-size:12px}
+  .clock{display:none}
+  .journey{order:3;flex-basis:100%;justify-content:flex-start;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+  .journey::-webkit-scrollbar{display:none}
+  .journey button{font-size:13px;padding:6px 10px;border-radius:8px;flex-shrink:0}
+  .trip{height:3px}
+  .titlebar{flex-direction:column;align-items:flex-start;gap:8px}
+  .kicker{font-size:11px;letter-spacing:.06em;margin-bottom:4px;line-height:1.35}
+  h1{font-size:clamp(24px,7.2vw,34px);line-height:1.12}
+  .tb-right{flex-direction:row;align-items:center;flex-wrap:wrap;gap:8px}
+  .scale{font-size:15px;padding:3px 10px;border-radius:8px}
+  .slot{font-size:13px}
+  .qbtn{font-size:13px;padding:5px 12px;border-radius:8px}
+  .content{display:flex;flex-direction:column;gap:12px}
+  .panel{border-radius:12px}
+  .model-panel{height:auto;display:flex;flex-direction:column}
+  .model-host{position:relative;inset:auto;height:min(58vh,480px);min-height:320px;flex:none}
+  .legend,.legend.arriba{position:static;max-width:none;border:0;border-top:1px solid var(--line);border-radius:0;background:var(--aqua-ll);padding:7px 10px}
+  .legend.arriba{flex-direction:row}
+  .mfoot{position:static;background:#fff;border-top:1px solid var(--line);pointer-events:auto}
+  .evid{font-size:11px;top:10px;left:10px;padding:3px 8px;border-radius:6px;max-width:calc(100% - 20px)}
+  .pick{font-size:14px;top:40px;right:10px;left:10px;max-width:none;padding:6px 10px;border-radius:8px}
+  .pick small{font-size:11px}
+  .legend{font-size:11.5px;gap:6px 10px}
+  .legend i{width:10px;height:10px}
+  .hud{top:40px;left:10px;min-width:0;padding:8px 10px;border-radius:8px}
+  .hud{right:auto;max-width:72%}
+  .hud .row{font-size:12px} .hud .big{font-size:20px} .hud .note{display:none} .hud .bar{height:6px}
+  .loading{font-size:14px}
+  .mfoot{flex-direction:column;align-items:stretch;gap:6px;padding:8px 10px}
+  .mlabel{max-width:none;font-size:11.5px}
+  .mcontrols{max-width:none;justify-content:flex-start;gap:5px}
+  .chip{font-size:12.5px;padding:6px 10px;border-radius:8px}
+  .chipgroup{padding:3px;gap:3px;border-radius:9px;flex-wrap:wrap}
+  .video-panel{display:block}
+  .video-frame{flex:none;aspect-ratio:16/9;width:100%}
+  .vbadge,.vtime{font-size:10.5px;top:8px;padding:2px 7px;border-radius:5px}
+  .vbadge{left:8px} .vtime{right:8px}
+  .vfoot{padding:8px 10px;flex-wrap:wrap}
+  .vcap{font-size:13px} .vcap small{font-size:11.5px}
+  .vtabs button{width:32px;height:32px;font-size:13px}
+  .vcard{font-size:13px;padding:16px} .vcard b{font-size:15px}
+  .messages{flex-direction:column;align-items:stretch;gap:10px;padding:14px 14px 12px;border-left-width:5px;border-radius:12px}
+  .msg{font-size:19px;line-height:1.3}
+  .msg-nav{display:flex;gap:8px}
+  .msg-nav button{flex:1;font-size:15px;font-weight:600;padding:10px;border-radius:9px;border:1px solid var(--aqua);background:#fff;color:var(--aqua-d)}
+  .msg-nav button.main{background:var(--aqua);color:#fff}
+  .refs{grid-template-columns:1fr;gap:6px;padding-top:10px}
+  .refs-label{font-size:12px}
+  .refs-list,.refs.dense .refs-list{columns:1;font-size:12.5px;line-height:1.4;max-height:none;overflow:visible}
+  .refs-list li{margin-bottom:6px;padding-left:18px;text-indent:-18px}
+  .slideno{font-size:12px}
+  .gracias{padding:20px;gap:12px}
+  .gracias img{width:78%}
+  .gracias h2{font-size:22px} .gracias p{font-size:14px} .gracias .firma{font-size:15px} .gracias .firma span{font-size:13px}
+  .qcard{position:fixed}
+  .qbox{width:92%;padding:24px 18px 18px;border-radius:14px;border-top-width:6px}
+  .qlabel{font-size:12px;margin-bottom:14px} .qtext{font-size:22px} .qthink{font-size:12px;margin-top:20px} .qbar{height:6px} .qhint{font-size:11px;margin-top:12px}
+  .drawer,.drawer.wide{left:3vw;right:3vw;width:auto}
+}
+
