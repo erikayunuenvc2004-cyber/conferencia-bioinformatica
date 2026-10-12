@@ -31,14 +31,22 @@ window.CONTENIDO = {
 "bodyparts3d": "Database Center for Life Science. (2013). <i>BodyParts3D</i> (Versión 4.0) [Base de datos de modelos anatómicos 3D; licencia CC BY 4.0]. https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
 "mitsuhashi2009": "Mitsuhashi, N., Fujieda, K., Tamura, T., Kawamoto, S., Takagi, T. y Okubo, K. (2009). BodyParts3D: 3D structure database for anatomical concepts. <i>Nucleic Acids Research, 37</i>(Suppl. 1), D782–D785. https://doi.org/10.1093/nar/gkn613",
 "mri_torax": "Biomedizinische NMR Forschungs GmbH. (2011). <i>Real-time MRI – Thorax</i> [Video; licencia CC BY-SA 3.0]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Real-time_MRI_-_Thorax.ogv",
-"uecker2010": "Uecker, M., Zhang, S., Voit, D., Karaus, A., Merboldt, K.-D. y Frahm, J. (2010). Real-time MRI at a resolution of 20 ms. <i>NMR in Biomedicine, 23</i>(8), 986–994. https://doi.org/10.1002/nbm.1585"
+"uecker2010": "Uecker, M., Zhang, S., Voit, D., Karaus, A., Merboldt, K.-D. y Frahm, J. (2010). Real-time MRI at a resolution of 20 ms. <i>NMR in Biomedicine, 23</i>(8), 986–994. https://doi.org/10.1002/nbm.1585",
+"openorganelle": "Janelia Research Campus. (2021). <i>OpenOrganelle: jrc_jurkat-1 (linfocito T humano, línea Jurkat)</i> [Conjunto de datos de microscopía electrónica FIB-SEM y segmentación de organelos; licencia CC BY 4.0]. https://openorganelle.janelia.org/datasets/jrc_jurkat-1",
+"heinrich2021": "Heinrich, L., Bennett, D., Ackerman, D., Park, W., Bogovic, J., Eckstein, N., Petruncio, A., Clements, J., Pang, S., Xu, C. S., Funke, J., Korff, W., Hess, H. F., Lippincott-Schwartz, J., Saalfeld, S., Weigel, A. V. y COSEM Project Team. (2021). Whole-cell organelle segmentation in volume electron microscopy. <i>Nature, 599</i>(7883), 141–146. https://doi.org/10.1038/s41586-021-03977-3",
+"xu2021": "Xu, C. S., Pang, S., Shtengel, G., Müller, A., Ritter, A. T., Hoffman, H. K., Takemura, S., Lu, Z., Pasolli, H. A., Iyer, N., Chung, J., Bennett, D., Weigel, A. V., Freeman, M., van Engelenburg, S. B., Walther, T. C., Farese, R. V., Lippincott-Schwartz, J., Mellman, I., . . . Hess, H. F. (2021). An open-access volume electron microscopy atlas of whole cells and tissues. <i>Nature, 599</i>(7883), 147–151. https://doi.org/10.1038/s41586-021-03992-4",
+"colnal_dayhoff": "El Colegio Nacional. (2025, 12 de abril). <i>Centenario de Margaret Dayhoff: los orígenes de la bioinformática evolutiva</i> [Video]. YouTube. https://www.youtube.com/watch?v=DoJu1aZvU6c",
+"dayhoff1965": "Dayhoff, M. O., Eck, R. V., Chang, M. A. y Sochard, M. R. (1965). <i>Atlas of protein sequence and structure</i>. National Biomedical Research Foundation.",
+"dayhoff1978": "Dayhoff, M. O., Schwartz, R. M. y Orcutt, B. C. (1978). A model of evolutionary change in proteins. En M. O. Dayhoff (Ed.), <i>Atlas of protein sequence and structure</i> (Vol. 5, Supl. 3, pp. 345–352). National Biomedical Research Foundation.",
+"hogeweg2011": "Hogeweg, P. (2011). The roots of bioinformatics in theoretical biology. <i>PLoS Computational Biology, 7</i>(3), Artículo e1002021. https://doi.org/10.1371/journal.pcbi.1002021",
+"altschul1990": "Altschul, S. F., Gish, W., Miller, W., Myers, E. W. y Lipman, D. J. (1990). Basic local alignment search tool. <i>Journal of Molecular Biology, 215</i>(3), 403–410. https://doi.org/10.1016/S0022-2836(05)80360-2"
 },
 "diapositivas": [
 {
 "id": "portada",
 "num": "00",
 "corto": "Inicio",
-"tiempo": "0–2 min",
+"tiempo": "0–4 min",
 "escala": "Bienvenida",
 "kicker": "CONFERENCIA INTERACTIVA · ERIKA YUNUEN CALDERON VAZQUEZ, INGENIERA EN BIOTECNOLOGÍA",
 "titulo": "¿De qué estamos hechos realmente?",
@@ -65,22 +73,24 @@ window.CONTENIDO = {
 }
 ],
 "mensajes": [
-"¿De qué estamos hechos <b>realmente</b>?",
-"Hoy vamos a hacer <b>zoom</b>: del cuerpo completo hasta las moléculas.",
-"Y al final, una <b>computadora</b> nos ayudará a formular una hipótesis científica."
+"En este momento estamos <b>respirando</b>: los músculos sostienen la postura, las neuronas envían señales y el corazón late.",
+"¿Qué está pasando <b>dentro</b> de nuestro cuerpo para que todo esto sea posible?",
+"No vemos cómo una célula sintetiza moléculas, ni cómo trabaja una proteína, ni cómo una alteración molecular causa una enfermedad.",
+"¿Cómo estudiar lo que <b>no podemos ver</b>? Laboratorio, instrumentos de medición… y <b>computadoras</b>.",
+"Hoy: la <b>bioinformática</b>, la unión entre la biología y la computación."
 ],
-"pregunta": "Si pudieran hacer zoom infinito dentro de su mano, ¿qué creen que verían al final?",
+"pregunta": "¿Cómo podemos estudiar aquello que no podemos ver directamente?",
 "refs": [
 "bodyparts3d",
 "yt_yourgenome"
 ],
-"guion": "<p><span class='cue'>[Antes de empezar: el cuerpo humano gira solo a la izquierda; a la derecha corre, sin audio, el video de una científica en su laboratorio.]</span></p><p>Buenos días. Antes de decirles mi nombre o el tema, quiero hacerles una pregunta: <b>¿de qué estamos hechos realmente?</b> <span class='cue'>[Pausa de 3 segundos. Deja que respondan: “de células”, “de átomos”, “de agua”.]</span></p><p>Todas esas respuestas son correctas… depende de qué tan cerca miremos. Hoy vamos a hacer un viaje <b>de fuera hacia adentro</b>: empezamos con el cuerpo completo, pasamos a los órganos, a los tejidos, a una célula, al ADN, a los aminoácidos y a las proteínas. Y al final vamos a ver cómo una computadora nos ayuda a estudiar algo que nadie puede ver a simple vista.</p><p>Algo importante: <b>no necesitan saber programar ni memorizar fórmulas</b> para seguir esto. Lo único que necesitan es hacer preguntas. Y la persona que ven a la derecha, Louise Aigrain, es una científica real que trabaja leyendo ADN en el Wellcome Sanger Institute, en Inglaterra. Lo que ella hace en un laboratorio y lo que hace una computadora están conectados, y eso es lo que vamos a descubrir.</p><p><span class='cue'>[Flecha derecha dos veces para las siguientes ideas. Luego: “Empecemos por lo más grande que tenemos: nuestro propio cuerpo.”]</span></p>"
+"guion": "<p><span class='cue'>[El cuerpo humano gira solo a la izquierda; a la derecha, una científica real en su laboratorio.]</span></p><p>En este preciso momento estamos respirando. Nuestros músculos mantienen nuestra postura, nuestras neuronas transmiten señales y nuestro corazón continúa latiendo. Todo eso ocurre aquí y ahora.</p><p>Pero, ¿alguna vez se han detenido a pensar qué está pasando exactamente dentro de su cuerpo para que todo esto sea posible?</p><p>No vemos cómo una célula sintetiza moléculas, ni cómo una proteína ejecuta su función; mucho menos podemos observar a simple vista cómo una pequeña alteración molecular desencadena una enfermedad.</p><p>Entonces… ¿cómo podemos estudiar aquello que no podemos ver directamente? <span class='cue'>[Pausa: deja que respondan.]</span></p><p>Una parte de la respuesta está en los experimentos de laboratorio. Otra parte, en los instrumentos de medición. Y una parte fundamental, hoy en día, está en las computadoras.</p><p>Hoy les mostraré la <b>bioinformática</b>: la unión entre la biología y la computación.</p>"
 },
 {
 "id": "cuerpo",
 "num": "01",
 "corto": "Cuerpo",
-"tiempo": "2–6 min",
+"tiempo": "4–6 min",
 "escala": "≈ 1.7 m",
 "kicker": "NIVEL 1 · ESCALA DEL CUERPO",
 "titulo": "El cuerpo: un sistema de sistemas",
@@ -112,43 +122,7 @@ window.CONTENIDO = {
 "ref": "yt_powers",
 "src": "videos/clips/powers_mano.mp4",
 "url": "https://www.youtube.com/watch?v=0fKBhvDjuy0&t=352s"
-}
-],
-"mensajes": [
-"El cuerpo humano es un <b>sistema de sistemas</b>.",
-"Cada color es un sistema: <b>óseo, nervioso, circulatorio, respiratorio, digestivo y urinario</b>.",
-"<b>Haz clic</b> en un órgano para ver su nombre y su sistema.",
-"En el video, cada salto nos acerca <b>10 veces</b> más.",
-"Cada nivel que observamos <b>esconde otro más pequeño</b>."
-],
-"pregunta": "Si el cuerpo está formado por órganos, ¿qué hay debajo de un órgano?",
-"refs": [
-"bodyparts3d",
-"mitsuhashi2009",
-"yt_powers"
-],
-"guion": "<p>En la portada vimos a una persona por fuera. Ahora la vemos <b>por dentro</b>. Este modelo no es un dibujo: viene de <b>BodyParts3D</b>, una base de datos anatómica del Database Center for Life Science de Japón, donde cada pieza tiene su nombre anatómico oficial. <span class='cue'>[Gira el modelo. Pulsa «Ver por fuera» y luego «Ver por dentro».]</span></p><p>Nuestro cuerpo es un <b>sistema de sistemas</b>. Cada color del modelo es un sistema: el <b>óseo</b> nos sostiene, el <b>nervioso</b> coordina, el <b>circulatorio</b> transporta, el <b>respiratorio</b> trae oxígeno, el <b>digestivo</b> obtiene nutrientes y el <b>urinario</b> filtra la sangre. Ninguno trabaja solo. <span class='cue'>[Haz clic en el corazón, en un pulmón y en el hígado: aparece su nombre y su sistema.]</span></p><p>Ahora miren el video de la derecha. Es una película clásica de 1977, <i>Powers of Ten</i>, de Charles y Ray Eames. La cámara se acerca a la mano de una persona dormida y <b>cada paso es diez veces más cerca</b> que el anterior.</p><p>Esa es exactamente la idea de hoy: <b>cada nivel que observamos esconde otro más pequeño</b>.</p><p><span class='cue'>[Pregunta al grupo:]</span> Si el cuerpo está formado por órganos… ¿qué hay debajo de un órgano? <span class='cue'>[Escucha 2–3 respuestas. Si alguien dice “tejidos” o “células”, retómalo: “Vamos a comprobarlo”.]</span></p>"
 },
-{
-"id": "organos",
-"num": "02",
-"corto": "Órganos",
-"tiempo": "6–9 min",
-"escala": "≈ 30 cm",
-"kicker": "NIVEL 2 · ÓRGANOS Y SISTEMAS",
-"titulo": "Los órganos: piezas que trabajan en equipo",
-"modelo": {
-"tipo": "glb",
-"modelo": "organos",
-"leyenda": "sistemas",
-"ref": "bodyparts3d",
-"refsExtra": [
-"mitsuhashi2009"
-],
-"orbita": "0deg 80deg auto",
-"etiqueta": "Órganos del tórax y del abdomen · haz clic en uno para ver su nombre"
-},
-"videos": [
 {
 "tipo": "local",
 "src": "videos/clips/mri_torax.mp4",
@@ -158,87 +132,58 @@ window.CONTENIDO = {
 "uecker2010"
 ],
 "url": "https://commons.wikimedia.org/wiki/File:Real-time_MRI_-_Thorax.ogv"
-}
-],
-"mensajes": [
-"Un <b>órgano</b> es una estructura con una función: el corazón bombea, los pulmones intercambian gases.",
-"Corazón y aorta: <b>circulación</b>. Pulmones y tráquea: <b>respiración</b>.",
-"Hígado, estómago e intestinos: <b>digestión</b>. Riñones y vejiga: <b>sistema urinario</b>.",
-"A la derecha: una <b>resonancia magnética real</b> de un tórax; el corazón late en vivo.",
-"Ningún órgano trabaja solo: todos están <b>conectados</b>."
-],
-"pregunta": "Si el corazón dejara de bombear, ¿qué otros órganos dejarían de funcionar?",
-"refs": [
-"bodyparts3d",
-"mri_torax",
-"uecker2010"
-],
-"guion": "<p>Ahora quitamos el esqueleto y nos quedamos con los <b>órganos</b> del tórax y del abdomen. <span class='cue'>[Gira el modelo y haz clic en el corazón, los pulmones, el hígado, el estómago y los riñones.]</span></p><p>Un órgano es una estructura con una función. El <b>corazón</b> bombea la sangre por la aorta; los <b>pulmones</b>, con la tráquea, llevan oxígeno a esa sangre; el <b>hígado</b>, el estómago y los intestinos procesan los alimentos; los <b>riñones</b> filtran la sangre y la vejiga guarda la orina. Los colores son los mismos sistemas de la diapositiva anterior.</p><p>Miren el video de la derecha. <b>No es una animación</b>: es una <b>resonancia magnética en tiempo real</b> de un tórax humano, hecha por el grupo de Jens Frahm en Alemania con una técnica que toma decenas de imágenes por segundo. Se ve el corazón latiendo, los grandes vasos, los pulmones (en negro, porque están llenos de aire) y abajo el hígado. <span class='cue'>[Señala cada órgano en el video y luego en el modelo.]</span></p><p><span class='cue'>[Pregunta:]</span> Si el corazón dejara de bombear, ¿qué otros órganos dejarían de funcionar? <span class='cue'>[Respuesta esperada: todos, porque todos necesitan el oxígeno que lleva la sangre.]</span> Exacto: <b>los órganos dependen unos de otros</b>. Y cada órgano, por dentro, está hecho de tejidos. Vamos a acercarnos al corazón.</p>"
 },
-{
-"id": "tejido",
-"num": "03",
-"corto": "Tejido",
-"tiempo": "9–12 min",
-"escala": "≈ 12 cm – 100 µm",
-"kicker": "NIVEL 3 · TEJIDOS",
-"titulo": "Un tejido: células que trabajan juntas",
-"modelo": {
-"tipo": "glb",
-"modelo": "corazon",
-"ref": "bodyparts3d",
-"refsExtra": [
-"mitsuhashi2009"
-],
-"orbita": "0deg 75deg auto",
-"etiqueta": "Corazón humano: cavidades, paredes musculares, válvulas y vasos coronarios · haz clic en una parte"
-},
-"videos": [
 {
 "tipo": "local",
 "src": "videos/cardiomiocitos.webm",
 "titulo": "Microscopía real: cardiomiocitos humanos (células de músculo cardiaco) derivados de células madre, contrayéndose",
 "ref": "eng2016"
-},
-{
-"tipo": "local",
-"ini": 383,
-"fin": 412,
-"titulo": "Powers of Ten (1977): de la piel a los capilares y a un linfocito",
-"ref": "yt_powers",
-"src": "videos/clips/powers_piel.mp4",
-"url": "https://www.youtube.com/watch?v=0fKBhvDjuy0&t=383s"
 }
 ],
 "mensajes": [
-"Un <b>tejido</b> es un grupo de células especializadas que cumplen una función común.",
-"La pared del corazón es <b>tejido muscular cardiaco</b>: el miocardio.",
-"A la derecha: células de corazón humano <b>latiendo</b> en un laboratorio.",
-"Las válvulas son <b>tejido conectivo</b>; los vasos coronarios alimentan al músculo.",
-"Bajemos un nivel más: <b>la célula</b>."
+"Empecemos por nuestro <b>cuerpo</b>: está formado por <b>órganos</b>.",
+"Los órganos contienen <b>tejidos</b>, y los tejidos están formados por miles de millones de <b>células</b>.",
+"Cada color del modelo es un sistema: óseo, nervioso, circulatorio, respiratorio, digestivo y urinario."
 ],
-"pregunta": "¿Por qué una sola célula no puede hacer todo lo que hace un corazón?",
+"pregunta": "Si el cuerpo está formado por órganos, ¿qué hay debajo de un órgano?",
 "refs": [
 "bodyparts3d",
-"eng2016",
-"yt_powers"
+"mitsuhashi2009",
+"yt_powers",
+"mri_torax",
+"uecker2010",
+"eng2016"
 ],
-"guion": "<p>Nos acercamos a un solo órgano: el <b>corazón</b>. <span class='cue'>[Gira el modelo y haz clic en sus partes: cavidades, pared de las aurículas, válvulas, arterias coronarias.]</span> Por dentro tiene cuatro cavidades por donde pasa la sangre, válvulas que impiden que regrese y unas arterias propias, las coronarias, que le llevan oxígeno.</p><p>La pared del corazón está hecha de <b>tejido muscular cardiaco</b>, el miocardio. Un tejido es eso: <b>células especializadas organizadas para cumplir una función común</b>. Las válvulas, en cambio, son de tejido conectivo, más resistente.</p><p>Miren el video de la derecha. Esto <b>no es una animación</b>: es un video de microscopio publicado en la revista <i>Nature Communications</i>. Son <b>células de músculo cardiaco humano</b>, obtenidas en el laboratorio a partir de células madre. Están vivas y se contraen solas. <span class='cue'>[Deja que lo observen 5 segundos en silencio. Opcional: clip 2, Powers of Ten entrando en la piel.]</span></p><p><span class='cue'>[Pregunta:]</span> ¿Por qué una sola célula no puede hacer todo lo que hace un corazón? <span class='cue'>[Respuesta esperada: el órgano necesita muchas células organizadas y comunicadas.]</span> Exacto: la función aparece cuando <b>muchas células especializadas trabajan juntas</b>. Ahora vamos a meternos en una sola célula.</p>"
+"guion": "<p><span class='cue'>[Gira el modelo; pulsa «Ver por fuera» y «Ver por dentro». Haz clic en el corazón o en un pulmón.]</span></p><p>Empecemos por nuestro cuerpo. Está formado por <b>órganos</b>, que contienen <b>tejidos</b>, y los tejidos están constituidos por miles de millones de <b>células</b>.</p><p><span class='cue'>[Video 1: Powers of Ten, cada salto es 10 veces más cerca. Video 2: resonancia magnética real de un tórax. Video 3: células de corazón humano latiendo.]</span></p>"
 },
 {
-"id": "celula",
-"num": "04",
+"id": "eucariota",
+"num": "02",
 "corto": "Célula",
-"tiempo": "12–15 min",
+"tiempo": "6–12 min",
 "escala": "≈ 10 µm",
-"kicker": "NIVEL 4 · LA CÉLULA Y SU NÚCLEO",
-"titulo": "La célula: un laboratorio diminuto",
+"kicker": "NIVEL 2 · LA CÉLULA EUCARIOTA",
+"titulo": "La célula: la unidad fundamental de la vida",
 "modelo": {
-"tipo": "mol",
-"clase": "nucleosoma",
-"datos": "1KX5",
-"ref": "davey2002",
-"etiqueta": "Dentro del núcleo: nucleosoma (PDB 1KX5) · 147 pares de bases de ADN enrollados en 8 histonas · estructura experimental por rayos X"
+"tipo": "glb",
+"modelo": "celula",
+"ref": "openorganelle",
+"refsExtra": [
+"heinrich2021",
+"xu2021"
+],
+"leyenda": "organelos",
+"orbita": "35deg 70deg 70%",
+"evidencia": "Datos experimentales 3D · microscopía electrónica · OpenOrganelle (Janelia)",
+"etiqueta": "Célula eucariota real: linfocito T humano (Jurkat) reconstruido por microscopía electrónica FIB-SEM · la cara plana es el borde del volumen escaneado · haz clic en un organelo",
+"extra": {
+"modelo": "celula_interior",
+"boton": "Ver por dentro",
+"volver": "Ver con membrana",
+"etiqueta": "Organelos sin la membrana plasmática · haz clic en uno",
+"orbita": "35deg 70deg 70%"
+},
+"autorrotar": true
 },
 "videos": [
 {
@@ -264,48 +209,118 @@ window.CONTENIDO = {
 "src": "videos/neurona_motora_mitocondrias.webm",
 "titulo": "Microscopía real: mitocondrias moviéndose dentro de una neurona motora de médula espinal",
 "ref": "owens2012"
-},
-{
-"tipo": "local",
-"ini": 402,
-"fin": 428,
-"titulo": "Powers of Ten (1977): de un linfocito a su núcleo",
-"ref": "yt_powers",
-"src": "videos/clips/powers_nucleo.mp4",
-"url": "https://www.youtube.com/watch?v=0fKBhvDjuy0&t=402s"
 }
 ],
 "mensajes": [
-"La <b>célula</b> es la unidad básica de todos los seres vivos.",
-"Video real: un <b>linfocito T</b> (célula de defensa) explorando otra célula.",
-"En el <b>núcleo</b>, el ADN se enrolla alrededor de proteínas llamadas <b>histonas</b>.",
-"Cada célula guarda cerca de <b>2 metros de ADN</b>, empacados en un núcleo diminuto."
+"Las <b>células</b> son las unidades fundamentales de la vida: diminutas, con miles de reacciones químicas coordinadas.",
+"En su <b>núcleo</b> está el ADN: información organizada en secuencias de nucleótidos.",
+"El ADN se <b>transcribe</b> en ARN, y el ARN se <b>traduce</b> en proteínas.",
+"Las <b>proteínas</b> son las ejecutoras del trabajo celular: transportan oxígeno, nos defienden y aceleran reacciones (enzimas).",
+"Son cadenas lineales de <b>aminoácidos</b>… ¿cómo se convierten en máquinas moleculares?",
+"Como una <b>cuerda</b>: el mismo material sirve para atar, escalar o tejer una red según su forma.",
+"En las proteínas, la <b>estructura tridimensional</b> determina la función."
 ],
-"pregunta": "¿Dónde esperarían encontrar las instrucciones genéticas de una célula?",
+"pregunta": "¿Cómo pasa una cadena lineal de aminoácidos a ser una máquina molecular?",
 "refs": [
-"davey2002",
+"openorganelle",
+"heinrich2021",
+"xu2021",
 "yt_tcell",
 "chen2014",
 "burgess2012",
-"yt_powers",
 "owens2012"
 ],
-"guion": "<p>Llegamos a la <b>célula</b>, la unidad básica de la vida. Todo ser vivo está hecho de una o de muchas células.</p><p>Miren el video: es una <b>microscopía real</b>, hecha con una técnica llamada <i>lattice light-sheet</i>, desarrollada en el campus Janelia del Instituto Médico Howard Hughes por el equipo de Eric Betzig, premio Nobel de Química 2014. Lo naranja es un <b>linfocito T</b>, una célula de defensa, explorando la superficie de otra célula. Esto está pasando ahora mismo dentro de ustedes. <span class='cue'>[Pausa: deja que lo observen.]</span></p><p>Una célula tiene membrana, citoplasma, orgánulos como las mitocondrias… y un <b>núcleo</b>. <span class='cue'>[Pregunta:]</span> ¿Dónde esperarían encontrar las instrucciones genéticas? <span class='cue'>[Respuesta: en el núcleo, en el ADN.]</span></p><p>Ahora miren el modelo de la izquierda: es una estructura real, obtenida con rayos X, de lo que hay <b>dentro del núcleo</b>. El listón naranja es ADN, y está enrollado alrededor de ocho proteínas llamadas <b>histonas</b>. A esta unidad se le llama <b>nucleosoma</b>. <span class='cue'>[Pulsa «Solo ADN» y luego «ADN + histonas».]</span> ¿Por qué enrollarlo? Porque cada una de sus células guarda <b>cerca de dos metros de ADN</b>, y tiene que caber en un núcleo que mide unas cuantas milésimas de milímetro.</p><p>Si nos acercamos todavía más a ese listón… llegamos al ADN.</p>"
+"guion": "<p><span class='cue'>[Gira la célula. Haz clic en el núcleo y en una mitocondria; luego «Ver por dentro». Es una célula real, un linfocito T humano, reconstruida con microscopía electrónica.]</span></p><p>Las células son las unidades fundamentales de la vida. Aunque son diminutas, en su interior ocurren miles de reacciones químicas coordinadas.</p><p>En su <b>núcleo</b> encontramos el ADN, que contiene información organizada en secuencias de nucleótidos. Esta información se <b>transcribe</b> en ARN y luego se <b>traduce</b> en proteínas.</p><p>¿Y por qué nos interesan tanto las proteínas? Porque son las verdaderas ejecutoras del trabajo celular. Hay proteínas que transportan oxígeno en la sangre, otras que nos defienden contra patógenos y enzimas que aceleran las reacciones químicas para mantenernos vivos.</p><p>Las proteínas están formadas por cadenas lineales de aminoácidos. Pero, ¿cómo pasa una cadena lineal a ser una máquina molecular capaz de realizar una función específica?</p><p>Pensemos en una cuerda. El material de la cuerda es exactamente el mismo, pero dependiendo de los nudos y la forma que le demos, podemos usarla para atar un paquete, escalar o tejer una red. En las proteínas pasa lo mismo: <b>su estructura tridimensional determina su función</b>.</p>"
 },
 {
-"id": "adn",
-"num": "05",
-"corto": "ADN",
-"tiempo": "15–19 min",
-"escala": "≈ 2 nm",
-"kicker": "NIVEL 5 · INFORMACIÓN GENÉTICA",
-"titulo": "Una molécula que guarda instrucciones",
+"id": "historia",
+"num": "03",
+"corto": "Historia",
+"tiempo": "12–16 min",
+"escala": "1965–1978",
+"kicker": "HISTORIA · LOS INICIOS DE LA BIOINFORMÁTICA",
+"titulo": "Margaret Dayhoff, la madre de la bioinformática",
+"modelo": {
+"tipo": "historia",
+"ref": "dayhoff1965",
+"refsExtra": [
+"dayhoff1978",
+"hogeweg2011"
+],
+"imagen": "img/atlas_1965.png",
+"pie": "Portada del primer Atlas (1965), tal como aparece en la charla de El Colegio Nacional.",
+"nombre": "Margaret Oakley Dayhoff",
+"fechas": "1925–1983",
+"rol": "Biofísica estadounidense, considerada la madre de la bioinformática",
+"hitos": [
+[
+"1965",
+"Publica el <i>Atlas of Protein Sequence and Structure</i>: la primera colección de secuencias de proteínas hecha con computadoras (65 secuencias)."
+],
+[
+"1966",
+"Con Richard Eck crea el <b>código de una sola letra</b> para los aminoácidos (A, R, N, D…)."
+],
+[
+"1970",
+"Paulien Hogeweg y Ben Hesper acuñan el término <b>bioinformática</b>: el estudio de los procesos informáticos en los sistemas biológicos."
+],
+[
+"1978",
+"Publica las matrices <b>PAM</b> para comparar mutaciones evolutivas entre proteínas."
+]
+]
+},
+"videos": [
+{
+"tipo": "local",
+"src": "videos/clips/dayhoff_trabajo.mp4",
+"ini": 1278,
+"fin": 1323,
+"url": "https://www.youtube.com/watch?v=DoJu1aZvU6c&t=1278s",
+"titulo": "El trabajo de Dayhoff: el Atlas de 1965, el código de una letra y las matrices PAM (lámina de Edna Suárez, UNAM)",
+"ref": "colnal_dayhoff"
+},
+{
+"tipo": "local",
+"src": "videos/clips/dayhoff_semblanza.mp4",
+"ini": 1065,
+"fin": 1110,
+"url": "https://www.youtube.com/watch?v=DoJu1aZvU6c&t=1065s",
+"titulo": "Margaret O. Dayhoff (1925–1983): pionera de los métodos computacionales en bioquímica (El Colegio Nacional)",
+"ref": "colnal_dayhoff"
+}
+],
+"mensajes": [
+"En la década de 1960, <b>Margaret Oakley Dayhoff</b>, considerada la madre de la bioinformática…",
+"…comprendió que para entender las proteínas necesitábamos la ayuda de las <b>computadoras</b>.",
+"Creó el primer <b>Atlas de Secuencias y Estructuras de Proteínas</b> (1965).",
+"Desarrolló el <b>código de una sola letra</b> para los aminoácidos y diseñó las matrices <b>PAM</b>.",
+"Paulien Hogeweg y Ben Hesper acuñaron el término <b>bioinformática</b> (1970)."
+],
+"pregunta": "¿Por qué Margaret Dayhoff necesitó computadoras para estudiar las proteínas?",
+"refs": [
+"dayhoff1965",
+"dayhoff1978",
+"hogeweg2011",
+"colnal_dayhoff"
+],
+"guion": "<p>En la década de 1960, <b>Margaret Oakley Dayhoff</b>, considerada la madre de la bioinformática, comprendió que para entender estas moléculas necesitábamos la ayuda de las computadoras. Creó el primer <b>Atlas de Secuencias y Estructuras de Proteínas</b> (1965), desarrolló el <b>código de una sola letra</b> para los aminoácidos y diseñó las <b>matrices PAM</b> para comparar mutaciones evolutivas.</p><p>Más adelante, <b>Paulien Hogeweg y Ben Hesper</b> acuñaron formalmente el término <b>bioinformática</b> para definir el estudio de los procesos informáticos en los sistemas biológicos. <span class='cue'>[Dato: lo usaron desde 1970; varias fuentes lo fechan en 1978 porque sus publicaciones de ese año lo difundieron.]</span></p><p><span class='cue'>[A la derecha: láminas de la historiadora Edna Suárez (UNAM) en El Colegio Nacional, 2025.]</span></p>"
+},
+{
+"id": "lenguaje",
+"num": "04",
+"corto": "Lenguaje",
+"tiempo": "16–19 min",
+"escala": "≈ 10 nm",
+"kicker": "NIVEL 4 · EL LENGUAJE DE LA GENÉTICA",
+"titulo": "Leer el ADN como un texto",
 "modelo": {
 "tipo": "mol",
-"clase": "dna",
-"datos": "1BNA",
-"ref": "drew1981",
-"etiqueta": "ADN-B (PDB 1BNA) · 12 pares de bases · estructura experimental por difracción de rayos X"
+"clase": "nucleosoma",
+"datos": "1KX5",
+"ref": "davey2002",
+"etiqueta": "Dentro del núcleo: nucleosoma (PDB 1KX5) · 147 pares de bases de ADN enrollados en 8 histonas · estructura experimental por rayos X"
 },
 "videos": [
 {
@@ -319,6 +334,46 @@ window.CONTENIDO = {
 },
 {
 "tipo": "local",
+"ini": 402,
+"fin": 428,
+"titulo": "Powers of Ten (1977): de un linfocito a su núcleo",
+"ref": "yt_powers",
+"src": "videos/clips/powers_nucleo.mp4",
+"url": "https://www.youtube.com/watch?v=0fKBhvDjuy0&t=402s"
+}
+],
+"mensajes": [
+"La bioinformática se encarga de la parte <b>lingüística</b> de la genética.",
+"Como los lingüistas, buscamos <b>patrones</b>, sintaxis y significado… en las secuencias de ADN y proteínas.",
+"Para no perdernos en este mar de texto biológico: <b>repositorios digitales compartidos</b>.",
+"Bases de datos <b>primarias</b>, <b>secundarias</b> y <b>curadas</b>; <b>navegadores genómicos</b> para inspeccionar base por base."
+],
+"pregunta": "¿En qué se parece leer el ADN a leer un idioma?",
+"refs": [
+"davey2002",
+"yt_wehi",
+"yt_powers"
+],
+"guion": "<p><span class='cue'>[Modelo: el ADN real enrollado en el núcleo (nucleosoma). Pulsa «Solo ADN»: es el «texto» que leemos.]</span></p><p>Podríamos decir que la bioinformática se encarga de la parte <b>lingüística</b> de la genética. De la misma manera que los lingüistas buscan patrones, sintaxis y significados en el lenguaje humano, los bioinformáticos buscamos <b>patrones en las secuencias de ADN y proteínas</b>.</p><p>Para no perdernos en este inmenso mar de texto biológico, la comunidad científica internacional creó <b>repositorios digitales compartidos</b>: bases de datos primarias, secundarias y curadas, y navegadores genómicos que permiten la inspección base por base. <span class='cue'>[Ejemplos si preguntan: primarias, GenBank o el Protein Data Bank; secundarias, Pfam; curadas, UniProtKB/Swiss-Prot; navegadores, Ensembl o UCSC Genome Browser.]</span></p>"
+},
+{
+"id": "adn",
+"num": "05",
+"corto": "ADN",
+"tiempo": "19–23 min",
+"escala": "≈ 2 nm",
+"kicker": "NIVEL 5 · COMPARAR SECUENCIAS",
+"titulo": "Comparar para descubrir: BLAST",
+"modelo": {
+"tipo": "mol",
+"clase": "dna",
+"datos": "1BNA",
+"ref": "drew1981",
+"etiqueta": "ADN-B (PDB 1BNA) · 12 pares de bases · estructura experimental por difracción de rayos X"
+},
+"videos": [
+{
+"tipo": "local",
 "ini": 196,
 "fin": 236,
 "titulo": "Laboratorio real de secuenciación: preparación de muestras de ADN",
@@ -328,47 +383,47 @@ window.CONTENIDO = {
 },
 {
 "tipo": "local",
-"ini": 639,
-"fin": 700,
-"titulo": "HHMI: la Fotografía 51 de Rosalind Franklin y el descubrimiento de la doble hélice",
-"ref": "yt_hhmi_dna",
-"src": "videos/clips/hhmi_foto51.mp4",
-"url": "https://www.youtube.com/watch?v=1vm3od_UmFg&t=639s"
-},
-{
-"tipo": "local",
 "ini": 418,
 "fin": 450,
 "titulo": "Powers of Ten (1977): del núcleo a la doble hélice",
 "ref": "yt_powers",
 "src": "videos/clips/powers_adn.mp4",
 "url": "https://www.youtube.com/watch?v=0fKBhvDjuy0&t=418s"
+},
+{
+"tipo": "local",
+"ini": 639,
+"fin": 700,
+"titulo": "HHMI: la Fotografía 51 de Rosalind Franklin y el descubrimiento de la doble hélice",
+"ref": "yt_hhmi_dna",
+"src": "videos/clips/hhmi_foto51.mp4",
+"url": "https://www.youtube.com/watch?v=1vm3od_UmFg&t=639s"
 }
 ],
 "mensajes": [
-"El ADN son <b>dos cadenas</b> enrolladas en una doble hélice.",
-"Cuatro letras: <b>A, T, G y C</b>. A se aparea con T; G se aparea con C.",
-"Un <b>gen</b> es un segmento de ADN con información para fabricar un ARN o una proteína.",
-"Hoy, máquinas leen millones de fragmentos de ADN… y las <b>computadoras</b> los ordenan."
+"Descubrimos un fragmento de <b>ADN desconocido</b> en un organismo: ¿cómo sabemos qué hace?",
+"La forma más rápida: <b>compararlo</b> con todo lo que ya conocemos.",
+"1990: Stephen Altschul y su equipo crean <b>BLAST</b>, que busca rompiendo la secuencia en «palabras».",
+"<b>E-value</b>: cuanto más cerca de cero, menor la probabilidad de que la coincidencia sea casualidad."
 ],
-"pregunta": "¿Qué podría cambiar si cambiara una sola letra de la secuencia?",
+"pregunta": "Si descubrimos un fragmento de ADN desconocido, ¿cómo sabemos qué hace?",
 "refs": [
 "drew1981",
-"yt_wehi",
+"altschul1990",
 "yt_yourgenome",
-"yt_hhmi_dna",
-"yt_powers"
+"yt_powers",
+"yt_hhmi_dna"
 ],
-"guion": "<p>Esto es <b>ADN real</b>: cada esfera y cada barra corresponde a la posición de un átomo, medida en 1981 en el laboratorio de Richard Dickerson usando rayos X. <span class='cue'>[Gira la hélice.]</span></p><p>Fíjense en tres cosas. Primero, son <b>dos cadenas</b> que se enrollan una sobre la otra: la doble hélice. Segundo, en medio están las <b>bases</b>, las “letras” del ADN: A, T, G y C. <span class='cue'>[Pulsa «Pares de bases».]</span> Y tercero, las letras no se juntan al azar: <b>la A siempre se aparea con la T, y la G con la C</b>. Por eso, si conozco una cadena, puedo deducir la otra.</p><p>A la derecha, una visualización del Instituto Walter y Eliza Hall, en Australia. No es inteligencia artificial: los científicos la construyeron con <b>datos de cristalografía</b> publicados, y muestra cómo el ADN se enrolla para empacarse. <span class='cue'>[Opcional: cambia al clip del laboratorio de secuenciación o al de la Fotografía 51.]</span></p><p>Un <b>gen</b> es un segmento de ADN que contiene la información para fabricar un ARN o una proteína. El genoma humano tiene alrededor de tres mil millones de pares de letras. Nadie puede leer eso a mano: las máquinas de secuenciación leen millones de fragmentos y <b>las computadoras los ordenan y comparan</b>. Aquí ya aparece la bioinformática.</p><p><span class='cue'>[Pregunta:]</span> ¿Qué podría cambiar si cambiara una sola letra? <span class='cue'>[Respuesta: podría cambiar un aminoácido de una proteína, o no tener efecto; depende de dónde ocurra.]</span> Para entenderlo, tenemos que ver qué se fabrica con esas instrucciones.</p>"
+"guion": "<p><span class='cue'>[Modelo: ADN real (PDB 1BNA). Pulsa «Pares de bases»: A con T, G con C. Esas son las letras que compara BLAST.]</span></p><p>Imaginemos que descubrimos un fragmento de ADN desconocido en un organismo. ¿Cómo sabemos qué hace? La forma más rápida es <b>compararlo con todo lo que ya conocemos</b>.</p><p>En 1990, <b>Stephen Altschul</b> y su equipo desarrollaron <b>BLAST</b>, que realiza la búsqueda rompiendo la secuencia en «palabras» clave. El programa asigna un valor estadístico llamado <b>E-value</b>: cuanto más cercano a cero sea este valor, menor es la probabilidad de que la coincidencia sea una mera casualidad.</p>"
 },
 {
 "id": "aminoacidos",
 "num": "06",
 "corto": "Aminoácidos",
-"tiempo": "19–22 min",
+"tiempo": "23–26 min",
 "escala": "≈ 0.5 nm",
-"kicker": "NIVEL 6 · QUÍMICA DE LA VIDA",
-"titulo": "El alfabeto de las proteínas",
+"kicker": "NIVEL 6 · ELEGIR LA HERRAMIENTA",
+"titulo": "Nucleótidos, proteínas o traducir",
 "modelo": {
 "tipo": "mol",
 "clase": "amino",
@@ -396,27 +451,25 @@ window.CONTENIDO = {
 }
 ],
 "mensajes": [
-"El ADN se copia en ARN, que se lee de <b>tres en tres letras</b> (codones): cada codón indica un aminoácido.",
-"Hay <b>20 aminoácidos estándar</b> en nuestras proteínas.",
-"Todos comparten un esqueleto: <b>carbono alfa, grupo amino y grupo carboxilo</b>…",
-"…y cambian en su <b>cadena lateral (R)</b>: pequeña, grande, con carga, sin carga.",
-"Se unen con <b>enlaces peptídicos</b>, como las cuentas de un collar."
+"Según la pregunta biológica elegimos la herramienta: comparar <b>nucleótidos</b> o comparar <b>proteínas</b>…",
+"…o <b>traducir el ADN</b> a aminoácidos y buscar proteínas conocidas.",
+"Fue crucial en epidemias como <b>Zika</b> y <b>SARS-CoV-2</b>: identificar mutaciones y rastrear el origen de las variantes."
 ],
-"pregunta": "¿Qué podría cambiar si sustituyéramos un aminoácido por otro?",
+"pregunta": "Si tienes un fragmento de ADN pero quieres saber qué proteína produce, ¿qué búsqueda harías?",
 "refs": [
 "kim2025",
 "yt_pdb_protein"
 ],
-"guion": "<p>Las instrucciones del ADN primero se copian en una molécula mensajera, el <b>ARN</b>, y esa copia se lee de <b>tres en tres letras</b>. Cada grupo de tres, llamado codón, indica qué <b>aminoácido</b> va en una proteína. Nuestras proteínas se construyen con <b>20 aminoácidos estándar</b>.</p><p>A la izquierda tienen aminoácidos reales, con la geometría registrada en PubChem, la base de datos química de los Institutos Nacionales de Salud de Estados Unidos. Los colores no son decoración: <b>amarillo</b> es el carbono alfa, el centro; <b>azul</b>, el grupo amino; <b>rojo</b>, el grupo carboxilo. Esas tres partes las comparten todos. <span class='cue'>[Cambia entre Glicina, Valina y Triptófano.]</span> Lo que cambia es lo <b>verde: la cadena lateral</b>. En la glicina es solo un hidrógeno; en el triptófano es un doble anillo enorme.</p><p><span class='cue'>[Invita a un estudiante a pasar y elegir un aminoácido; pídele que diga si su parte verde es grande o pequeña.]</span></p><p>En el video del Protein Data Bank ven cómo se clasifican: unos “odian” el agua, otros la “aman”, otros tienen carga. Y luego <b>se unen por enlaces peptídicos</b>, uno detrás de otro, como cuentas de un collar. <span class='cue'>[Cambia al segundo clip: enlaces peptídicos.]</span></p><p><span class='cue'>[Pregunta:]</span> ¿Qué podría cambiar si sustituyéramos un aminoácido por otro? <span class='cue'>[Respuesta: tamaño, carga o afinidad por el agua; eso puede cambiar cómo se pliega la proteína.]</span> Y esa es la clave: el collar no se queda estirado. Se dobla.</p>"
+"guion": "<p><span class='cue'>[Modelo: aminoácidos reales. Cada uno es una «letra» del código de una sola letra de Dayhoff (Gly = G, Trp = W…).]</span></p><p>Según la pregunta biológica elegimos el tipo de herramienta: para comparar <b>nucleótidos</b> (BLASTN), para comparar <b>proteínas</b> (BLASTP) o para <b>traducir el ADN</b> y buscar proteínas conocidas (BLASTX).</p><p>Esta herramienta fue crucial durante epidemias como el <b>Zika</b> o el <b>SARS-CoV-2</b> para identificar mutaciones y rastrear el origen de las variantes en tiempo real.</p>"
 },
 {
 "id": "proteina",
 "num": "07",
 "corto": "Proteína",
-"tiempo": "22–25 min",
+"tiempo": "26–30 min",
 "escala": "≈ 6 nm",
-"kicker": "NIVEL 7 · ESTRUCTURA 3D",
-"titulo": "La forma también hace el trabajo",
+"kicker": "NIVEL 7 · EVOLUCIÓN EN LAS SECUENCIAS",
+"titulo": "Alinear familias de genes",
 "modelo": {
 "tipo": "mol",
 "clase": "proteina",
@@ -445,25 +498,24 @@ window.CONTENIDO = {
 }
 ],
 "mensajes": [
-"La cadena de aminoácidos se <b>pliega</b> en una forma tridimensional.",
-"La forma permite la función: la <b>hemoglobina</b> transporta oxígeno en la sangre.",
-"4 cadenas de proteína y 4 grupos <b>hemo</b>, cada uno con un átomo de hierro.",
-"Su forma se midió con <b>rayos X</b>: es evidencia experimental."
+"No comparamos solo dos secuencias: <b>familias completas</b> de genes en decenas de especies.",
+"El <b>alineamiento múltiple</b> encuentra regiones que no han cambiado en millones de años.",
+"Con ellas reconstruimos <b>árboles filogenéticos</b> para entender la evolución de las especies."
 ],
-"pregunta": "¿Qué pasaría si una proteína no adquiriera su forma adecuada?",
+"pregunta": "¿Por qué una región de una proteína que no ha cambiado en millones de años sería importante?",
 "refs": [
 "fermi1984",
 "berman2000",
 "yt_pdb_protein",
 "yt_pdb_enzymes"
 ],
-"guion": "<p>Esta es la <b>hemoglobina</b>, la proteína que hace roja a su sangre y que lleva el oxígeno de los pulmones al resto del cuerpo. Es una estructura <b>experimental</b>: el equipo de Max Perutz la midió con rayos X. <span class='cue'>[Gira el modelo; pasa el puntero por los residuos para leer su nombre.]</span></p><p>Fíjense: son <b>cuatro cadenas</b> de aminoácidos, cada una plegada en hélices. <span class='cue'>[Pulsa «Grupos hemo».]</span> Y dentro de cada cadena hay un <b>grupo hemo</b> con un átomo de hierro: ahí se une el oxígeno. La forma no es un detalle; <b>la forma hace el trabajo</b>.</p><p><span class='cue'>[Invita a un estudiante a girar la proteína y a encontrar los cuatro grupos hemo.]</span></p><p>En el video del Protein Data Bank ven otras funciones: anticuerpos que reconocen virus, la insulina que comunica señales, enzimas que aceleran reacciones, transportadores en la membrana. Todas son proteínas y todas dependen de su forma.</p><p><span class='cue'>[Pregunta:]</span> ¿Qué pasaría si una proteína no adquiriera su forma adecuada? <span class='cue'>[Respuesta: podría dejar de funcionar o funcionar mal; algunas enfermedades se relacionan con eso.]</span></p><p>Ahora, un problema: medir la forma de una proteína con rayos X puede tardar meses o años. Y existen <b>millones</b> de proteínas. ¿Cómo le hacemos? Aquí entra la computadora.</p>"
+"guion": "<p><span class='cue'>[Modelo: hemoglobina humana. Es un ejemplo clásico: su secuencia se ha comparado en muchas especies. Pulsa «Grupos hemo».]</span></p><p>Cuando no comparamos solo dos secuencias, sino <b>familias completas de genes en decenas de especies</b>, utilizamos algoritmos de <b>alineamiento múltiple</b>, que permiten encontrar regiones que no han cambiado a lo largo de millones de años y reconstruir <b>árboles filogenéticos</b> para entender la evolución de las especies.</p>"
 },
 {
 "id": "bioinformatica",
 "num": "08",
 "corto": "Bioinformática",
-"tiempo": "25–31 min",
+"tiempo": "30–33 min",
 "escala": "Datos",
 "kicker": "NIVEL 8 · COMPUTACIÓN + BIOLOGÍA",
 "titulo": "Cuando la biología se vuelve un problema de datos",
@@ -496,26 +548,24 @@ window.CONTENIDO = {
 }
 ],
 "mensajes": [
-"<b>Bioinformática</b> = biología + computación + análisis de datos.",
-"AlphaFold <b>predice</b> la forma de una proteína a partir de su secuencia de aminoácidos.",
-"Azul oscuro = alta confianza · naranja = baja confianza (<b>pLDDT</b>).",
-"Comparamos la predicción con el experimento: <b>¿coinciden?</b>",
-"Una predicción es una <b>hipótesis</b>: hay que comprobarla."
+"La secuenciación dio un salto gigantesco: del método <b>Sanger</b> a la <b>NGS</b> (secuenciación de nueva generación).",
+"Pasamos de leer fragmentos aislados a generar <b>terabytes</b> de datos.",
+"Con tantos datos, las computadoras incluso <b>predicen</b> la forma 3D de las proteínas (AlphaFold)."
 ],
-"pregunta": "¿Cómo puede una computadora estudiar algo que no podemos ver directamente?",
+"pregunta": "¿Qué cambió al pasar de leer fragmentos aislados a generar terabytes de datos?",
 "refs": [
 "jumper2021",
 "varadi2024",
 "yt_afdb",
 "yt_jumper"
 ],
-"guion": "<p>La <b>bioinformática</b> combina biología, computación y análisis de datos para responder preguntas que serían imposibles de resolver a mano.</p><p>Un ejemplo famoso: <b>AlphaFold</b>, un programa de Google DeepMind que, a partir de la secuencia de aminoácidos, <b>predice</b> la forma 3D de una proteína. Por este trabajo, Demis Hassabis y John Jumper recibieron parte del Premio Nobel de Química 2024. Junto con el Instituto Europeo de Bioinformática publicaron gratis más de <b>214 millones</b> de estructuras predichas. <span class='cue'>[Señala el video de la derecha.]</span></p><p>Lo de la izquierda es una de esas predicciones: una de las cadenas de la hemoglobina que acabamos de ver. Los colores <b>no son decoración</b>: indican qué tan segura está la computadora. <b>Azul oscuro</b>, mucha confianza; <b>naranja</b>, poca. <span class='cue'>[Señala la leyenda.]</span></p><p>Ahora hagamos ciencia: <b>comparemos la predicción con el experimento</b>. <span class='cue'>[Pulsa «Comparar con rayos X». Aparece en gris la cadena alfa medida por Perutz y su equipo, y la app calcula la diferencia promedio (RMSD) entre ambas.]</span> La diferencia que aparece es <b>menor a un ångström</b>, más pequeña que un átomo. <b>La predicción coincide muy bien</b> con la realidad medida.</p><p><span class='cue'>[Pregunta:]</span> ¿Entonces ya no necesitamos laboratorios? <span class='cue'>[Escucha.]</span> No: una predicción es una <b>hipótesis</b>. Aquí pudimos compararla porque alguien ya había hecho el experimento. Para muchas proteínas, la predicción nos dice dónde mirar, pero hay que comprobarla.</p><p>Y si podemos predecir formas, la siguiente pregunta es: ¿podemos predecir <b>cómo se une una molécula</b> a una proteína?</p>"
+"guion": "<p>La tecnología de secuenciación dio un salto gigantesco desde el <b>método Sanger</b> hacia la <b>NGS</b>. Pasamos de leer fragmentos aislados a generar <b>terabytes de datos</b>.</p><p><span class='cue'>[Opcional, con el modelo: esta es una predicción de AlphaFold; pulsa «Comparar con rayos X» (RMSD menor a 1 Å).]</span></p>"
 },
 {
 "id": "docking",
 "num": "09",
 "corto": "Docking",
-"tiempo": "31–40 min",
+"tiempo": "33–40 min",
 "escala": "≈ 1–3 nm",
 "kicker": "NIVEL 9 · DOCKING MOLECULAR",
 "titulo": "¿Encaja esta molécula en la proteína?",
@@ -551,11 +601,12 @@ window.CONTENIDO = {
 }
 ],
 "mensajes": [
-"<b>Docking</b>: predecir cómo una molécula pequeña puede acomodarse en una proteína.",
-"La proteína: <b>proteasa del VIH</b>, una enzima que el virus necesita para madurar.",
-"La molécula: <b>XK263</b>, un inhibidor diseñado usando estructuras 3D.",
-"Tu turno: <b>muévela</b>. ¿Cuántos contactos logras sin chocar?",
-"Encajar <b>no significa curar</b>: después vienen experimentos y ensayos clínicos."
+"Pregunta clave: ¿qué moléculas podrían interactuar con una <b>proteína asociada a una enfermedad</b>?",
+"Probar millones de compuestos en tubos de ensayo sería muy costoso y tardaría <b>décadas</b>.",
+"<b>Docking molecular</b>: predecir cómo se acomoda un <b>ligando</b> en el sitio activo de una proteína.",
+"No reemplaza al laboratorio: <b>prioriza hipótesis</b> antes de las pruebas in vitro e in vivo.",
+"Impulsa la <b>medicina de precisión</b>: paneles genéticos, biomarcadores y tratamientos personalizados.",
+"Observemos el modelo: <b>cavidades</b> de la superficie y <b>sitios de unión</b>."
 ],
 "pregunta": "Si una molécula parece encajar en una proteína, ¿podemos asegurar que funcionará como medicamento?",
 "refs": [
@@ -564,7 +615,7 @@ window.CONTENIDO = {
 "yt_xk263",
 "yt_hiv_action"
 ],
-"guion": "<p>Llegamos al tema que me apasiona: el <b>docking molecular</b>. La pregunta es sencilla: <b>¿cómo podría acomodarse una molécula pequeña dentro de una proteína?</b></p><p>La proteína de la izquierda es la <b>proteasa del VIH</b>, el virus que causa el sida. Es una enzima, unas “tijeras moleculares”, que el virus necesita para madurar. <span class='cue'>[Señala el video de PDB-101 si lo cambias: la proteasa cortando proteínas.]</span> Si bloqueamos las tijeras, el virus no puede completar su ciclo.</p><p>En amarillo está <b>XK263</b>, una molécula diseñada en los años noventa por un equipo de la empresa DuPont Merck usando la forma 3D de esta proteína. Esta posición es <b>experimental</b>: se midió con rayos X. A la derecha, una simulación publicada en una revista científica muestra cómo la molécula puede entrar por las “solapas” de la proteína.</p><p>Ahora, <b>¿quién quiere intentarlo?</b> <span class='cue'>[Invita a 1 o 2 estudiantes. Pulsa «Sacar la molécula». Que la regresen con las flechas y rotaciones mientras todos miran el contador. Si el tiempo apremia, que el grupo dicte la dirección y tú operas las flechas.]</span> El contador cuenta <b>contactos</b>, átomos cercanos que podrían interactuar, y <b>choques</b>, átomos demasiado juntos, imposibles en la realidad. Un buen acomodo tiene muchos contactos y cero choques.</p><p>Los programas de docking, como AutoDock Vina, hacen esto <b>millones de veces</b> y con reglas de física y química mucho más completas que nuestro contador. <span class='cue'>[Pulsa «Pose experimental» para comparar.]</span></p><p><span class='cue'>[Pregunta clave:]</span> Si una molécula parece encajar, ¿ya tenemos un medicamento? <span class='cue'>[Deja que discutan 30 segundos con su compañero.]</span> <b>No necesariamente.</b> El docking da una <b>predicción</b> que hay que comprobar en el laboratorio: si se une de verdad, si es segura, si llega a donde tiene que llegar. XK263 fue un compuesto de investigación; otros inhibidores de esta misma enzima sí llegaron a ser medicamentos después de años de pruebas.</p>"
+"guion": "<p>Llegamos a una pregunta clave en biotecnología y medicina: si queremos desarrollar un fármaco que actúe sobre una proteína asociada a una enfermedad, ¿cómo sabemos qué moléculas podrían interactuar con ella?</p><p>Probar manualmente millones de compuestos químicos en tubos de ensayo sería enormemente costoso y llevaría décadas. Por eso recurrimos a la simulación computacional mediante <b>docking molecular</b>.</p><p>En el docking buscamos predecir cómo se acomoda una pequeña molécula (<b>ligando</b>) dentro del <b>sitio activo</b> de una proteína y qué interacciones químicas son relevantes. <span class='cue'>[Pulsa «Sacar la molécula» y regrésala con los botones; muestra el contador de contactos y choques.]</span></p><p>No reemplaza al experimento de laboratorio; es una herramienta para priorizar e investigar las hipótesis más prometedoras antes de pasar a las pruebas in vitro e in vivo. Así es como impulsa la <b>medicina de precisión</b>: diseñando paneles genéticos para cáncer, identificando biomarcadores y seleccionando tratamientos personalizados para cada paciente.</p><p>Para cerrar este recorrido «de fuera hacia adentro», observemos el modelo tridimensional en pantalla. <span class='cue'>[Pulsa «Bolsillo»: se ve la cavidad donde se une la molécula.]</span> Las computadoras no solo procesan cadenas de texto o códigos alineados: nos permiten manipular la forma tridimensional de las moléculas, observar sus cavidades superficiales e inspeccionar los sitios de unión atómica.</p>"
 },
 {
 "id": "cierre",
@@ -602,16 +653,17 @@ window.CONTENIDO = {
 }
 ],
 "mensajes": [
-"La biología no es solo memorizar: es <b>explorar, predecir y comprobar</b>.",
-"Si pudieras investigar una proteína, ¿cuál elegirías?",
-"<b>¡Gracias, Preparatoria Rector Hidalgo!</b> ¿Preguntas?"
+"Las computadoras nos permiten manipular la <b>forma 3D</b> de las moléculas, no solo procesar texto.",
+"La bioinformática aprovecha los datos y la potencia computacional para <b>comprender los sistemas biológicos</b>.",
+"Detrás de cada algoritmo hay una <b>pregunta biológica</b>: entender un fenómeno, explicar una enfermedad o encontrar una cura.",
+"<b>¡Muchas gracias, Preparatoria Rector Hidalgo!</b>"
 ],
-"pregunta": "Si pudieran usar una computadora para investigar una proteína relacionada con algo que les interese, ¿qué elegirían: una enfermedad, una bacteria, una planta o algún proceso de nuestro cuerpo?",
+"pregunta": "Si pudieras usar una computadora para responder una pregunta biológica, ¿cuál sería?",
 "refs": [
 "yt_thinking",
 "yt_yourgenome"
 ],
-"guion": "<p>Hagamos memoria. Empezamos con el <b>cuerpo completo</b>. Bajamos a los <b>órganos</b>, a los <b>tejidos</b>, a una <b>célula</b>, al <b>ADN</b> que guarda instrucciones, a los <b>aminoácidos</b> que se unen en cadenas, a las <b>proteínas</b> que se pliegan y trabajan… y terminamos usando una <b>computadora</b> para predecir formas y probar si una molécula encaja.</p><p>Lo que quiero que se lleven es esto: <b>la biología no es solo memorizar nombres</b>. También es explorar estructuras, formular hipótesis, analizar datos y comprobarlas. Las personas que vieron hoy en los videos, en laboratorios de Inglaterra, Alemania, Australia o Estados Unidos, hacen exactamente eso.</p><p><span class='cue'>[Pregunta final:]</span> Si pudieran usar una computadora para investigar una proteína relacionada con algo que les interese, ¿qué elegirían? ¿Una enfermedad, una bacteria, una planta, algo de nuestro cuerpo? <span class='cue'>[Da 10 segundos para pensar. Escucha 3–4 respuestas y conéctalas: “eso se puede estudiar con bioinformática”.]</span></p><p>Quiero agradecer a la <b>Escuela Preparatoria Rector Hidalgo</b> por abrirnos sus puertas, y a ustedes, sus alumnas y alumnos, por su atención y su curiosidad. Muchas gracias. Ahora sí: ¿qué preguntas tienen? <span class='cue'>[Mientras respondes, deja que pasen a girar los modelos; puedes volver a cualquier nivel con la barra superior.]</span></p>"
+"guion": "<p>La bioinformática no consiste únicamente en usar computadoras para estudiar la vida. Consiste en aprovechar los datos y la potencia computacional para <b>comprender los sistemas biológicos</b> a una profundidad que jamás habríamos imaginado.</p><p>Detrás de cada algoritmo y de cada línea de código existe siempre una <b>pregunta biológica</b> fundamental: queremos entender un fenómeno, explicar una enfermedad o encontrar una cura.</p><p>Quiero agradecer a la <b>Escuela Preparatoria Rector Hidalgo</b> y a ustedes, sus alumnas y alumnos. Muchas gracias por su atención. <span class='cue'>[Abre la ronda de preguntas.]</span></p>"
 }
 ],
 "autora": "Erika Yunuen Calderon Vazquez",

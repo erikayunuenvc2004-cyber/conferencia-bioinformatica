@@ -215,6 +215,7 @@ function loadModel(s){
   $('mlabel').textContent = m.etiqueta || '';
   if (m.tipo === 'glb') showGLB(m);
   else if (m.tipo === 'agradecimiento') showThanks(m);
+  else if (m.tipo === 'historia') showHistory(m);
   else showMol(m);
 }
 
@@ -228,6 +229,21 @@ function showThanks(m){
     <h2>Gracias, ${esc(m.escuela)}</h2>
     <p>${esc(m.texto)}</p>
     <div class="firma">${esc(C.autora)}<span>${esc(C.profesion)}</span></div>
+  </div>`;
+}
+
+/* ---------- historia: ficha de Margaret Dayhoff ---------- */
+function showHistory(m){
+  disposeMolHost();
+  if (mv && mv.parentNode) mv.parentNode.removeChild(mv);
+  setLoading(false); setEvid('Historia de la ciencia', '');
+  host().innerHTML = `<div class="ficha">
+    <figure><img src="${esc(m.imagen)}" alt="Portada del Atlas of Protein Sequence and Structure, 1965"><figcaption>${esc(m.pie)}</figcaption></figure>
+    <div class="ficha-txt">
+      <h2>${esc(m.nombre)}<span>${esc(m.fechas)}</span></h2>
+      <p class="rol">${esc(m.rol)}</p>
+      <ol>${m.hitos.map(([a, t]) => `<li><b class="anio">${esc(a)}</b><span>${t}</span></li>`).join('')}</ol>
+    </div>
   </div>`;
 }
 
@@ -302,6 +318,7 @@ function pickMaterial(mat){
 }
 // Colores de los sistemas (iguales a los del modelo)
 const SISTEMAS = [['#e9e2d2', 'óseo'], ['#f2c14e', 'nervioso'], ['#d7333f', 'circulatorio'], ['#7cc4e8', 'respiratorio'], ['#e9935a', 'digestivo'], ['#8e6cc9', 'urinario']];
+const ORGANELOS = [['#5b6fd6', 'Núcleo'], ['#e5533d', 'Mitocondrias'], ['#2fb59a', 'Retículo endoplásmico'], ['#f2b705', 'Aparato de Golgi'], ['#9a6bd1', 'Microtúbulos'], ['#9fd3dd', 'Membrana plasmática']];
 function showGLB(m, useExtra){
   const spec = useExtra ? Object.assign({}, m, m.extra) : m;
   disposeMolHost();
@@ -311,7 +328,8 @@ function showGLB(m, useExtra){
   setEvid(spec.evidencia || 'Modelo anatómico 3D real · BodyParts3D (DBCLS)');
   $('mlabel').textContent = spec.etiqueta || m.etiqueta;
   $('legend').classList.add('arriba');
-  if (spec.leyenda === 'sistemas') legend(SISTEMAS.filter(x => spec.modelo !== 'organos' || !['óseo', 'nervioso'].includes(x[1])).map(([c, t]) => [c, 'Sistema ' + t]));
+  if (spec.leyenda === 'organelos') legend(ORGANELOS.filter(x => spec.modelo !== 'celula_interior' || x[1] !== 'Membrana plasmática'));
+  else if (spec.leyenda === 'sistemas') legend(SISTEMAS.filter(x => spec.modelo !== 'organos' || !['óseo', 'nervioso'].includes(x[1])).map(([c, t]) => [c, 'Sistema ' + t]));
   else { $('legend').className = 'legend'; }
   const apply = () => {
     el.cameraOrbit = spec.orbita || 'auto auto auto';

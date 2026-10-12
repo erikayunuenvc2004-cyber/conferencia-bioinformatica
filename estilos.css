@@ -105,6 +105,20 @@ model-viewer{--poster-color:transparent;outline:none;background:radial-gradient(
 .gracias .firma{margin-top:1cqh;padding-top:1.6cqh;border-top:2px solid var(--aqua);font-size:2.1cqh;font-weight:700;color:var(--aqua-d)}
 .gracias .firma span{display:block;font-size:1.7cqh;font-weight:400;color:var(--muted);margin-top:.3cqh}
 
+/* ---------- Historia (ficha de Margaret Dayhoff) ---------- */
+.ficha{position:absolute;inset:0;display:flex;gap:3cqh;align-items:center;padding:6cqh 4cqh 3cqh;background:#fff}
+.ficha figure{margin:0;flex:0 0 30%;text-align:center}
+.ficha img{width:100%;max-height:44cqh;object-fit:contain;border:1px solid var(--line);border-radius:.8cqh}
+.ficha figcaption{font-size:1.15cqh;color:var(--muted);margin-top:.8cqh;line-height:1.3}
+.ficha-txt{flex:1;min-width:0}
+.ficha h2{margin:0;font-size:3.2cqh;font-weight:700;color:var(--ink);line-height:1.1}
+.ficha h2 span{display:block;font-size:1.8cqh;font-weight:400;color:var(--aqua-d);margin-top:.4cqh}
+.ficha .rol{margin:.8cqh 0 1.6cqh;font-size:1.6cqh;color:var(--muted)}
+.ficha ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1.1cqh}
+.ficha li{display:flex;gap:1.2cqh;font-size:1.55cqh;line-height:1.35;color:var(--ink)}
+.ficha li span b{color:var(--aqua-d);font-weight:700}
+.ficha li b.anio{flex:0 0 auto;color:#fff;background:var(--aqua);border-radius:.6cqh;padding:.1cqh .8cqh;height:fit-content;font-weight:700}
+
 /* ---------- Video tipo GIF (archivos locales, en bucle y sin audio) ---------- */
 .video-panel{display:flex;flex-direction:column}
 .video-frame{position:relative;flex:1;min-height:0;background:#0d1f25}
@@ -264,7 +278,14 @@ model-viewer{--poster-color:transparent;outline:none;background:radial-gradient(
   .refs-list,.refs.dense .refs-list{columns:1;font-size:12.5px;line-height:1.4;max-height:none;overflow:visible}
   .refs-list li{margin-bottom:6px;padding-left:18px;text-indent:-18px}
   .slideno{font-size:12px}
-  .gracias{padding:20px;gap:12px}
+  .ficha{position:static;flex-direction:column;padding:44px 14px 14px;gap:12px}
+  .ficha figure{flex:none;width:55%}
+  .ficha img{max-height:none}
+  .ficha figcaption{font-size:11px}
+  .ficha h2{font-size:22px} .ficha h2 span{font-size:14px} .ficha .rol{font-size:13px;margin:6px 0 10px}
+  .ficha li{font-size:13px;gap:8px} .ficha ol{gap:8px}
+  .model-host:has(.ficha),.model-host:has(.gracias){height:auto;min-height:0}
+  .gracias{position:static;padding:20px;gap:12px}
   .gracias img{width:78%}
   .gracias h2{font-size:22px} .gracias p{font-size:14px} .gracias .firma{font-size:15px} .gracias .firma span{font-size:13px}
   .qcard{position:fixed}
